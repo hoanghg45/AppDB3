@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM MỚI THÔNG TIN BỆNH NHÂN"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <TextView
+
+            android:gravity="bottom"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="ID:"
+            android:textSize="20sp"/>
+        <EditText
+            android:editable="false"
+            android:layout_weight="7"
+            android:id="@+id/edtId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <TextView
+
+            android:gravity="bottom"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Name:"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_weight="7"
+            android:id="@+id/edtName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hình thức cách ly:"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rg"
+        android:checkedButton="@id/rbTt">
+        <RadioButton
+            android:id="@+id/rbTt"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Tập trung"
+
+            android:textSize="15sp"/>
+        <RadioButton
+            android:id="@+id/rbTn"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Tại nhà"
+            android:textSize="15sp"/>
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Địa điểm cách ly: "
+            android:textSize="20dp"/>
+        <Spinner
+            android:layout_marginLeft="30dp"
+            android:id="@+id/spnPla"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Chi phí cách ly/ ngày: "
+            android:textSize="20dp"
+            android:gravity="bottom"/>
+        <EditText
+            android:layout_marginLeft="30dp"
+            android:id="@+id/edtCost"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
